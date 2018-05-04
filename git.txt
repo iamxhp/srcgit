@@ -1,0 +1,45 @@
+##################################################
+glob：https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375233990231ac8cf32ef1b24887a5209f83e01cb94b000
+##################################################
+Windows 安装Git
+	在开始菜单栏里找到“Git”->“Git Bash”
+	安装完成后再进行最后一步设置，命令行输入：
+		git config --global user.name "Your Name"
+		git config --global user.email "email@example.com"
+Ubuntu 安装Git
+	apt-get install git
+
+Git的使用：
+	1.创建空目录
+		mkdir learngit
+		cd learngit
+	2.将目录变成可管理仓库
+		git init
+		git目录默认是隐藏的 可以用ls -ah查看
+	3.将文件添加到git仓库中
+		git add file.txt
+		git commit -m "写入你本次提交的说明"
+	4. git status
+	5. git diff file.txt
+	6. 查看历史版本git log 
+	7. 查看历史版本git log --pretty=oneline
+	8.回退历史版本：
+		git reset --hard HEAD^
+		上上版本则是HEAD^^
+		回退过个版本则是 HEAD~100
+	9.回退某个具体版本号
+		git reset --hard 版本id
+	10 查看已输入命令
+		git reflog
+	11.撤销修改（将工作区的修改全部撤销）：
+		git checkout -- file.txt
+	12.撤销暂缓区的修改：
+		git reset HEAD file.txt
+	13. 添加github远程仓库
+		git remote add origin git@github.com:YourGithubUsername/learngit.git
+		第一次关联GitHub git push -u origin master
+		接下来只要 git push origin master
+	14.从GitHub克隆
+		git clone github远程库的地址
+		cd 远程库名
+		ls
