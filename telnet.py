@@ -3,7 +3,7 @@
 import socket,time,random,re,nmap
 import threading
 import dbg
-
+#weak password table
 wpt = {'1':['root','xc3511'],'2':['root','vizxv'],'3':['root','klv1234'],
 		'4':['root','dreambox'],'5':['root','zlxx'],'6':['root','default'],
 		'7':['root','juantech'],'8':['root','realtek'],'9':['root','54321'],
